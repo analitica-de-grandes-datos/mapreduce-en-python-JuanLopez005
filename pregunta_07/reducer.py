@@ -8,4 +8,4 @@ for line in sys.stdin:
   datos.append(columnas)
 organizar = sorted(datos, key=lambda x: (x[0], float(x[2])))
 for item in organizar:
-  sys.stdout.write(f"{item[0]}\t{item[1]}\t{item[2]}\n")
+  sys.stdout.write("{}   {}   {}\n".format(item[0], item[1], item[2]))
